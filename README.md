@@ -40,7 +40,7 @@ This repository contains everything I learned while studying frontend developmen
 
 ## 📁 What’s Inside This Repo
 
-- `html/` – HTML examples and exercises
+- `html/` – A multi-page restaurant website built using HTML to practice structure, navigation, and layout.
 - `css/` – Styling practice and layout demos
 - `js/` – JavaScript code and interactive exercises
 - `react/` – React components and small apps
