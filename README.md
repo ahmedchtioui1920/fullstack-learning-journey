@@ -41,7 +41,7 @@ This repository contains everything I learned while studying frontend developmen
 ## 📁 What’s Inside This Repo
 
 - `html/` – A multi-page restaurant website built using HTML to practice structure, navigation, and layout.
-- `css/` – Styling practice and layout demos
+- `css/` – A responsive HTML and CSS business card showcasing basic styling and layout skills.
 - `js/` – JavaScript code and interactive exercises
 - `react/` – React components and small apps
 - `nextjs/` – Next.js projects and pages
