@@ -1,6 +1,0 @@
--pop =  return the last element of array in that variable and delete it it
--shift =  delete the first element of array ----- requires no var
--unshift= add element to the beginning of the array ----- requires on var
--console.log() = print ()
--you can use swtich instead of if statement val =1 or val =2  switch(val) {case 1 : .....; break; case 2 : .....; break;   default: answer="stuff"; break;} otherwise in any other condition return stuff 
--1:42:54
