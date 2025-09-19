@@ -1,3 +1,4 @@
+// DOM Elements
 const taskInput = document.getElementById("task-input");
 const addTaskBtn = document.getElementById("add-task");
 const todosList = document.getElementById("todos-list");
@@ -7,35 +8,190 @@ const emptyState = document.querySelector(".empty-state");
 const dateElement = document.getElementById("date");
 const filters = document.querySelectorAll(".filter");
 
-let todos =[];
-let currrentFilter ="all";
-addTaskBtn.addEventListener("click", ()=>{
-    addTodo(taskInput.value)
+let todos = [];
+let currentFilter = "all";
+
+// Add new task on button click
+addTaskBtn.addEventListener("click", () => {
+  addTodo(taskInput.value);
 });
 
-taskInput.addEventListener("keydown",(e)=>{
-    if (e.key ==="Enter") addTodo(taskInput.value);
+// Add new task when pressing Enter
+taskInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") addTodo(taskInput.value);
 });
 
-clearCompletedBtn.addEventListener('click', clearCompleted)
+// Clear completed tasks
+clearCompletedBtn.addEventListener("click", clearCompleted);
+
 function addTodo(text) {
-    if (text.trim() ==="") return
-    const todo={
-        id:Date.now(),
-        text,
-        completed:false
-    }
-    todos.push(todo)
-    saveTodos()
-    //renderTodos()
-}
-function saveTodos(){
-    localStorage.setItem("todos",JSON.stringify(todos))
-    updateItemCount()
-    checkEmptyState()
+  if (text.trim() === "") return;
 
+  const todo = {
+    id: Date.now(), // Unique ID based on timestamp
+    text,
+    completed: false,
+  };
+
+  todos.push(todo);
+
+  saveTodos();
+  renderTodos();
+  taskInput.value = "";
 }
-function clearCompleted(){}
-function checkEmptyState(){}
-function clearCompleted(){}
-    
+
+function saveTodos() {
+  // Save todos to browser storage so they stay after refresh
+  localStorage.setItem("todos", JSON.stringify(todos));
+  updateItemsCount();
+  checkEmptyState();
+}
+
+function updateItemsCount() {
+  // Count uncompleted todos
+  const uncompletedTodos = todos.filter((todo) => !todo.completed);
+  itemsLeft.textContent = `${uncompletedTodos.length} item${
+    uncompletedTodos.length !== 1 ? "s" : ""
+  } left`;
+}
+
+function checkEmptyState() {
+  // Show "No tasks" message when list is empty (depends on filter)
+  const filteredTodos = filterTodos(currentFilter);
+  if (filteredTodos.length === 0) {
+    emptyState.classList.remove("hidden");
+  } else {
+    emptyState.classList.add("hidden");
+  }
+}
+
+function filterTodos(filter) {
+  // Return filtered list based on current filter
+  switch (filter) {
+    case "active":
+      return todos.filter((todo) => !todo.completed);
+    case "completed":
+      return todos.filter((todo) => todo.completed);
+    default:
+      return todos;
+  }
+}
+
+function renderTodos() {
+  todosList.innerHTML = "";
+
+  const filteredTodos = filterTodos(currentFilter);
+
+  filteredTodos.forEach((todo) => {
+    // Dynamically create <li> for each todo
+    const todoItem = document.createElement("li");
+    todoItem.classList.add("todo-item");
+    if (todo.completed) todoItem.classList.add("completed");
+
+    // Checkbox container
+    const checkboxContainer = document.createElement("label");
+    checkboxContainer.classList.add("checkbox-container");
+
+    // Checkbox input
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.classList.add("todo-checkbox");
+    checkbox.checked = todo.completed;
+    checkbox.addEventListener("change", () => toggleTodo(todo.id));
+
+    // Visual checkmark span
+    const checkmark = document.createElement("span");
+    checkmark.classList.add("checkmark");
+
+    checkboxContainer.appendChild(checkbox);
+    checkboxContainer.appendChild(checkmark);
+
+    // Task text
+    const todoText = document.createElement("span");
+    todoText.classList.add("todo-item-text");
+    todoText.textContent = todo.text;
+
+    // Delete button (with icon)
+    const deleteBtn = document.createElement("button");
+    deleteBtn.classList.add("delete-btn");
+    deleteBtn.innerHTML = '<i class="fas fa-times"></i>';
+    deleteBtn.addEventListener("click", () => deleteTodo(todo.id));
+
+    // Build the final <li>
+    todoItem.appendChild(checkboxContainer);
+    todoItem.appendChild(todoText);
+    todoItem.appendChild(deleteBtn);
+
+    todosList.appendChild(todoItem);
+  });
+}
+
+function clearCompleted() {
+  // Remove all completed tasks
+  todos = todos.filter((todo) => !todo.completed);
+  saveTodos();
+  renderTodos();
+}
+
+function toggleTodo(id) {
+  // Flip "completed" state of the todo
+  for (let i = 0; i < todos.length; i++) {
+    if (todos[i].id === id) {
+      todos[i].completed = !todos[i].completed;
+      break; // stop once found
+    }
+  }
+
+  saveTodos();
+  renderTodos();
+}
+
+function deleteTodo(id) {
+  // Remove one todo by id
+  todos = todos.filter((todo) => todo.id !== id);
+  saveTodos();
+  renderTodos();
+}
+
+function loadTodos() {
+  // Load tasks from localStorage on startup
+  const storedTodos = localStorage.getItem("todos");
+  if (storedTodos) todos = JSON.parse(storedTodos);
+  renderTodos();
+}
+
+filters.forEach((filter) => {
+  // Add click listener for each filter tab
+  filter.addEventListener("click", () => {
+    setActiveFilter(filter.getAttribute("data-filter"));
+  });
+});
+
+function setActiveFilter(filter) {
+  currentFilter = filter;
+
+  // Highlight the active filter
+  filters.forEach((item) => {
+    if (item.getAttribute("data-filter") === filter) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+
+  renderTodos();
+}
+
+function setDate() {
+  // Format today's date like "Friday, Sep 19"
+  const options = { weekday: "long", month: "short", day: "numeric" };
+  const today = new Date();
+  dateElement.textContent = today.toLocaleDateString("en-US", options);
+}
+
+// Run on page load
+window.addEventListener("DOMContentLoaded", () => {
+  loadTodos();
+  updateItemsCount();
+  setDate();
+});
