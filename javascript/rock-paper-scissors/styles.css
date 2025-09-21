@@ -1,0 +1,112 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #7749f8;
+  --primary-light: #9775fa;
+  --dark: #212529;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+/* Score Section */
+.score {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.score span {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+/* Rules Section */
+.rules {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light);
+  color: var(--dark);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: center;  /* center all buttons horizontally */
+  gap: 20px;                /* space between buttons */
+  margin-top: 20px;
+}
+
+/* Buttons with icon on top */
+.btn {
+  display: flex;
+  flex-direction: column;   /* stack image above text */
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  padding: 10px;
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn img.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;       /* space between image and text */
+  border-radius: 50px;
+  display: block;            /* ensures proper centering */
+}
+
+/* Replay button: fixed size, single line text */
+#replay-btn {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  white-space: nowrap;       /* prevents text wrapping */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: var(--primary-light);
+  transform: scale(1.05);
+}
+
+/* Message display */
+#game-message {
+  margin-top: 20px;
+  font-size: 18px;
+}
