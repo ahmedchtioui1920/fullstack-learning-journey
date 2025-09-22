@@ -1,0 +1,128 @@
+/* Base & Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables (Theme Colors) */
+:root {
+  --primary: #00b1b1;   /* Sky-blue theme color */
+  --white: #ffffff;     /* White for containers */
+  --hint-bg: #014d1a;   /* Dark green for hint box */
+}
+
+/* Body & Background */
+body {
+  background-image: url('IMG/background.png'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically centers content */
+
+  min-height: 100vh;       /* Full viewport height */
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary);   /* Default text color */
+}
+
+/* Heading */
+h1 {
+  color: var(--primary);
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Input Container */
+.input-container {
+  background-color: var(--white); 
+  color: var(--primary); 
+  padding: 20px 25px;
+  border-radius: 20px; 
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.73);
+}
+
+/* Label inside input container */
+.input-container label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--primary);
+}
+
+/* Input Field */
+#input-text {
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 60%;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+  color: var(--primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus state */
+#input-text:focus {
+  border-color: var(--primary);
+}
+
+/* Button */
+#check-button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#check-button:hover {
+  transform: scale(1.05);
+}
+
+/* Result Message */
+#result {
+  margin-top: 15px;
+  font-size: 22px;
+  color: var(--primary);
+  text-align: center;
+}
+
+/* Hint Box */
+.hint {
+  background-color: var(--hint-bg);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 16px;
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Hint text styling */
+.hint strong {
+  font-weight: 600;
+}
+
+.hint em {
+  font-style: italic;
+}
