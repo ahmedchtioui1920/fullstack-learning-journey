@@ -43,9 +43,9 @@ This repository contains everything I learned while studying frontend developmen
 - `html/` – A multi-page restaurant website built using HTML to practice structure, navigation, and layout.
 - `css/` – A responsive HTML and CSS business card showcasing basic styling and layout skills.
 - `javascript` – JavaScript projects and interactive exercises (random-background-color-changer, todo-app, rock-paper-scissors, palindrome-checker).
-- `react/` – React components and small apps
-- `nextjs/` – Next.js projects and pages
-- `projects/` – Small complete frontend projects
+- `react/` – React components and small apps (Coming soon)
+- `nextjs/` – Next.js projects and pages (Coming soon)
+- `projects/` – Small complete frontend projects (Coming soon)
 
 ---
 
