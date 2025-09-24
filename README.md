@@ -1,56 +1,111 @@
-# 🧠 Frontend Development Learning Summary
+# 🧠 Fullstack Learning Journey
 
-This repository contains everything I learned while studying frontend development from the ground up. It includes examples, practice files, and small projects built using modern web technologies.
-
----
-
-## 🌐 What I Learned
-
-### 🔹 HTML
-- Structuring webpages using elements like headings, paragraphs, lists, links, images, tables, and forms
-- Writing semantic HTML for accessibility and better page structure
-
-### 🔹 CSS
-- Styling pages with colors, fonts, spacing, and backgrounds
-- Layout systems using Flexbox and CSS Grid
-- Making responsive designs using media queries
-
-### 🔹 JavaScript
-- Working with variables, arrays, objects, functions, and loops
-- Handling user interactions using events (like clicks and form inputs)
-- Manipulating the DOM (Document Object Model)
-- Using modern JavaScript features (ES6+)
-- Fetching data from APIs using async/await
-
-### 🔹 React
-- Building user interfaces with components
-- Passing data using props
-- Managing component state using `useState`
-- Handling side effects using `useEffect`
-- Rendering lists, handling input, and working with basic hooks
-
-### 🔹 Next.js
-- Creating pages with file-based routing
-- Using layouts and nested components
-- Fetching and displaying data
-- Building simple full-stack apps with API routes
-- Deploying apps using platforms like Vercel
+This repository documents my step-by-step journey to becoming a fullstack web developer. It includes learning materials, small projects, and real-world applications using technologies across the entire web development stack — from HTML and CSS to Node.js and fullstack apps.
 
 ---
 
-## 📁 What’s Inside This Repo
+## 📁 Folder Structure
 
-- `html/` – A multi-page restaurant website built using HTML to practice structure, navigation, and layout.
-- `css/` – A responsive HTML and CSS business card showcasing basic styling and layout skills.
-- `javascript` – JavaScript projects and interactive exercises (random-background-color-changer, todo-app, rock-paper-scissors, palindrome-checker).
-- `react/` – React components and small apps (Coming soon)
-- `nextjs/` – Next.js projects and pages (Coming soon)
-- `projects/` – Small complete frontend projects (Coming soon)
+```bash
+fullstack-learning-journey/
+│
+├── frontend/
+│   ├── html-css/         → Semantic HTML & responsive CSS projects
+│   ├── javascript/       → DOM manipulation and JS logic projects
+│   ├── react/            → React basics (JSX, props, state, hooks)
+│   └── react-advanced/   → Routing, Context API, optimization
+│
+├── backend/
+│   ├── node-express/     → REST APIs built using Node.js and Express
+│   ├── database/         → MongoDB or PostgreSQL integrations
+│   └── authentication/   → JWT-based login/register systems
+│
+└── fullstack-projects/
+    ├── todo-fullstack/   → MERN stack Todo App (CRUD, auth)
+    ├── notes-fullstack/  → Notes App with full API and React UI
+    └── blog-platform/    → Full blog system with users, posts, comments
 
----
+🌐 What I’ve Learned So Far
 
-## 🎯 About This Repository
+🔹 Frontend (HTML, CSS, JS)
 
-This repo is my personal reference and learning archive.  
-It shows my journey from beginner to being able to build full frontend applications using modern tools like React and Next.js.
+Semantic HTML & accessibility
 
+Flexbox, Grid, media queries
+
+JavaScript ES6+, DOM events
+
+Interactive apps (Todo, RPS, Palindrome Checker)
+
+🔹 React
+
+JSX and rendering
+
+Functional components with props
+
+useState and useEffect hooks
+
+Event handling, conditional rendering
+
+React Router, Context API, hooks optimization
+
+🔹 Backend
+
+Node.js with Express
+
+RESTful API design (CRUD)
+
+Middleware, routing, error handling
+
+MongoDB integration
+
+Authentication (JWT, sessions)
+
+🔹 Fullstack
+
+Frontend + Backend integration
+
+API consumption in React
+
+Protected routes, login flows
+
+Building deployable fullstack apps
+
+✅ Mini Projects Completed
+JavaScript Projects
+
+✅ Background Color Changer
+
+✅ Todo List App
+
+✅ Rock-Paper-Scissors Game
+
+✅ Palindrome Checker
+
+React Projects
+
+✅ Counter App
+
+✅ Notes App
+
+✅ React Todo App
+
+🔜 Quiz App with Routing
+
+🔜 Movie Search App with API
+
+Backend Projects
+
+🔜 REST API for Todos
+
+🔜 Authentication system (login/register)
+
+🔜 Notes API with MongoDB
+
+Fullstack Projects
+
+🔜 Fullstack Todo App
+
+🔜 Fullstack Notes App
+
+🔜 Blog Platform
