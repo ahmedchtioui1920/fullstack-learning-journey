@@ -6,7 +6,6 @@ This repository documents my step-by-step journey to becoming a fullstack web de
 
 ## 📁 Folder Structure
 
-```bash
 fullstack-learning-journey/
 │
 ├── frontend/
