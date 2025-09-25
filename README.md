@@ -5,7 +5,7 @@ This repository documents my step-by-step journey to becoming a fullstack web de
 ---
 
 ## 📁 Folder Structure
-
+```
 fullstack-learning-journey/
 │
 ├── frontend/
@@ -23,7 +23,7 @@ fullstack-learning-journey/
 ├── todo-fullstack/ → MERN stack Todo App (CRUD, auth)
 ├── notes-fullstack/ → Notes App with full API and React UI
 └── blog-platform/ → Full blog system with users, posts, comments
-
+```
 # 🌐 What I’ve Learned So Far
 
 ## 🔹 Frontend (HTML, CSS, JavaScript)
