@@ -25,60 +25,61 @@ fullstack-learning-journey/
     ├── notes-fullstack/  → Notes App with full API and React UI
     └── blog-platform/    → Full blog system with users, posts, comments
 
-### 🌐 What I’ve Learned So Far
+# 🌐 What I’ve Learned So Far
 
-#### 🔹 Frontend (HTML, CSS, JavaScript)
+## 🔹 Frontend (HTML, CSS, JavaScript)
 - 🧱 Semantic HTML & accessibility best practices  
 - 🎨 Responsive design with **Flexbox**, **Grid**, and media queries  
 - ⚙️ JavaScript ES6+ fundamentals, DOM manipulation, and events  
-- 🧩 Built interactive apps:
+- 🧩 Built interactive apps:  
   - ✅ Background Color Changer  
   - ✅ Todo List App  
   - ✅ Rock-Paper-Scissors Game  
   - ✅ Palindrome Checker  
 
-#### 🔹 React (Frontend Framework)
+## 🔹 React (Frontend Framework)
 - ⚛️ JSX syntax and rendering elements  
 - 🧩 Functional components and props  
 - 🔁 State management with `useState` and `useEffect`  
 - 🖱️ Handling events, forms, and conditional rendering  
-- 🌐 Advanced features: **React Router**, **Context API**, and performance hooks
+- 🌐 Advanced features: **React Router**, **Context API**, and performance hooks  
 
-#### 🔹 Backend (Node.js & Express)
+## 🔹 Backend (Node.js & Express)
 - 🛠️ Built RESTful APIs using **Express.js**  
 - 🔄 CRUD operations and route handling  
 - 🔐 Middleware, error handling, and modular architecture  
 - 🗃️ Integration with **MongoDB**  
-- 🔐 Authentication with **JWT** and sessions
+- 🔐 Authentication with **JWT** and sessions  
 
-#### 🔹 Fullstack Development
+## 🔹 Fullstack Development
 - 🔗 Connecting frontend (React) with backend (Node/Express)  
 - 📡 API data fetching and handling in React  
 - 🔐 Protected routes and login/logout flows  
-- 🚀 Deployable fullstack apps
+- 🚀 Deployable fullstack apps  
 
 ---
 
-### ✅ Mini Projects Completed
+## ✅ Mini Projects Completed
 
-#### JavaScript Projects
+### JavaScript Projects
 - ✅ Background Color Changer  
 - ✅ Todo List App  
 - ✅ Rock-Paper-Scissors Game  
 - ✅ Palindrome Checker  
 
-#### React Projects
+### React Projects
 - 🔜 Counter App  
-- 🔜 Notes App   
+- 🔜 Notes App  
 - 🔜 Quiz App with Routing  
 - 🔜 Movie Search App with API  
 
-#### Backend Projects
+### Backend Projects
 - 🔜 REST API for Todos  
 - 🔜 Authentication System (Login/Register)  
 - 🔜 Notes API with MongoDB  
 
-#### Fullstack Projects
+### Fullstack Projects
 - 🔜 Fullstack Todo App  
 - 🔜 Fullstack Notes App  
 - 🔜 Blog Platform  
+
