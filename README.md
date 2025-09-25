@@ -68,7 +68,7 @@ fullstack-learning-journey/
 
 ### React Projects
 - ✅ Counter App  
-- 🔜 Notes App  
+- ✅ Notes App  
 - 🔜 Quiz App with Routing  
 - 🔜 Movie Search App with API  
 
