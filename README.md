@@ -9,20 +9,20 @@ This repository documents my step-by-step journey to becoming a fullstack web de
 fullstack-learning-journey/
 │
 ├── frontend/
-│   ├── html-css/         → Semantic HTML & responsive CSS projects
-│   ├── javascript/       → DOM manipulation and JS logic projects
-│   ├── react/            → React basics (JSX, props, state, hooks)
-│   └── react-advanced/   → Routing, Context API, optimization
+│ ├── html-css/ → Semantic HTML & responsive CSS projects
+│ ├── javascript/ → DOM manipulation and JS logic projects
+│ ├── react/ → React basics (JSX, props, state, hooks)
+│ └── react-advanced/ → Routing, Context API, optimization
 │
 ├── backend/
-│   ├── node-express/     → REST APIs built using Node.js and Express
-│   ├── database/         → MongoDB or PostgreSQL integrations
-│   └── authentication/   → JWT-based login/register systems
+│ ├── node-express/ → REST APIs built using Node.js and Express
+│ ├── database/ → MongoDB or PostgreSQL integrations
+│ └── authentication/ → JWT-based login/register systems
 │
 └── fullstack-projects/
-    ├── todo-fullstack/   → MERN stack Todo App (CRUD, auth)
-    ├── notes-fullstack/  → Notes App with full API and React UI
-    └── blog-platform/    → Full blog system with users, posts, comments
+├── todo-fullstack/ → MERN stack Todo App (CRUD, auth)
+├── notes-fullstack/ → Notes App with full API and React UI
+└── blog-platform/ → Full blog system with users, posts, comments
 
 # 🌐 What I’ve Learned So Far
 
