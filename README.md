@@ -67,7 +67,7 @@ fullstack-learning-journey/
 - ✅ Palindrome Checker  
 
 ### React Projects
-- 🔜 Counter App  
+- ✅ Counter App  
 - 🔜 Notes App  
 - 🔜 Quiz App with Routing  
 - 🔜 Movie Search App with API  
