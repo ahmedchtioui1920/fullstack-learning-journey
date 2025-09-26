@@ -16,7 +16,7 @@ fullstack-learning-journey/
 │
 ├── backend/
 │ ├── node-express/ → REST APIs built using Node.js and Express
-│ ├── database/ → MongoDB or PostgreSQL integrations
+│ ├── database/ → MongoDB integrations
 │ └── authentication/ → JWT-based login/register systems
 │
 └── fullstack-projects/
