@@ -70,7 +70,7 @@ fullstack-learning-journey/
 - ✅ Counter App  
 - ✅ Notes App  
 - ✅ Quiz App with Routing  
-- 🔜 Movie Search App with API  
+- ✅ Movie Search App with API  
 
 ### Backend Projects
 - 🔜 REST API for Todos  
