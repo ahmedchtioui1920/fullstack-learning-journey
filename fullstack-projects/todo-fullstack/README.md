@@ -42,7 +42,7 @@ todo-fullstack/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/fullstack-learning-journey.git
+git clone https://github.com/ahmedchtioui1920/fullstack-learning-journey.git
 cd fullstack-learning-journey/fullstack-projects/todo-fullstack
 ```
 
