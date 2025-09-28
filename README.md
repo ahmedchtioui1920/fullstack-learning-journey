@@ -74,8 +74,8 @@ fullstack-learning-journey/
 
 ### Backend Projects
 - ✅ REST API for Todos  
-- 🔜 Authentication System (Login/Register)  
-- 🔜 Notes API with MongoDB  
+- 🔜 Notes API with MongoDB
+- 🔜 Authentication System (Login/Register) 
 
 ### Fullstack Projects
 - ✅ Fullstack Todos App  
