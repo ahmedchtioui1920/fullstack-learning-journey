@@ -73,12 +73,12 @@ fullstack-learning-journey/
 - ✅ Movie Search App with API  
 
 ### Backend Projects
-- 🔜 REST API for Todos  
+- ✅ REST API for Todos  
 - 🔜 Authentication System (Login/Register)  
 - 🔜 Notes API with MongoDB  
 
 ### Fullstack Projects
-- 🔜 Fullstack Todo App  
+- ✅ Fullstack Todos App  
 - 🔜 Fullstack Notes App  
 - 🔜 Blog Platform  
 
