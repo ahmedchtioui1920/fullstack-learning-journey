@@ -1,0 +1,14 @@
+{
+  "name": "rest-api-todos",
+  "version": "1.0.0",
+  "description": "Simple REST API for Todos using Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ahmed",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
