@@ -61,7 +61,7 @@ fullstack-learning-journey/
 ## ✅ Mini Projects Completed
 
 ### JavaScript Projects
-- ✅  Background Color Changer  
+- ✅ Background Color Changer  
 - ✅ Todo List App  
 - ✅ Rock-Paper-Scissors Game  
 - ✅ Palindrome Checker  
