@@ -1,6 +1,6 @@
 # 🧠 Fullstack Learning Journey
 
-This repository documents my step-by-step journey to becoming a fullstack web developer. It includes learning materials, small projects, and real-world applications using technologies across the entire web development stack — from HTML and CSS to Node.js and fullstack apps.
+ repository documents my step-by-step journey to becoming a fullstack web developer. It includes learning materials, small projects, and real-world applications using technologies across the entire web development stack — from HTML and CSS to Node.js and fullstack apps.
 
 ---
 
